@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0C779EBBB0780FE8BF137970 /* libPods-qtum wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0903654DC429CD9C31C04908 /* libPods-qtum wallet.a */; };
+		4E346FC7214EC6A60027502A /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E346FC6214EC6A60027502A /* ActionViewController.swift */; };
+		4E346FCA214EC6A60027502A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E346FC8214EC6A60027502A /* MainInterface.storyboard */; };
+		4E346FCE214EC6A60027502A /* QTUM Signer.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4E346FC4214EC6A60027502A /* QTUM Signer.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B3014D601F2A1B8D007EAE7A /* WatchContractViewControllerDark.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D5F1F2A1B8D007EAE7A /* WatchContractViewControllerDark.m */; };
 		B3014D631F2A1B9E007EAE7A /* WatchContractViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D621F2A1B9E007EAE7A /* WatchContractViewControllerLight.m */; };
 		B3014D661F2A1BBB007EAE7A /* WatchTokensViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D651F2A1BBB007EAE7A /* WatchTokensViewControllerLight.m */; };
@@ -626,6 +629,16 @@
 		E7FD36661DC76EBC00748177 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FD36651DC76EBC00748177 /* RequestManager.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4E346FCC214EC6A60027502A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7FD36301DC4D07E00748177 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E346FC3214EC6A60027502A;
+			remoteInfo = "QTUM Signer";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		B33EAF9B1E5EC263006125F3 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -633,6 +646,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				4E346FCE214EC6A60027502A /* QTUM Signer.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,6 +670,10 @@
 		413D88732039B4AB52E1927C /* Pods-qtum wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qtum wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qtum wallet/Pods-qtum wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		4B2FBBBBB5655C103D193E92 /* libPods-QTUM Watch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTUM Watch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCA96264341BA8A5D0C98FD /* Pods-QTUM Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QTUM Watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-QTUM Watch Extension/Pods-QTUM Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		4E346FC4214EC6A60027502A /* QTUM Signer.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "QTUM Signer.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E346FC6214EC6A60027502A /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		4E346FC9214EC6A60027502A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4E346FCB214EC6A60027502A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTUM Watch Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3014D5C1F29FD63007EAE7A /* WatchContractOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractOutput.h; sourceTree = "<group>"; };
 		B3014D5D1F29FD7C007EAE7A /* WatchContractOutputDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractOutputDelegate.h; sourceTree = "<group>"; };
@@ -2078,6 +2096,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4E346FC1214EC6A60027502A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7FD36351DC4D07E00748177 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2092,6 +2117,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E346FC5214EC6A60027502A /* QTUM Signer */ = {
+			isa = PBXGroup;
+			children = (
+				4E346FC6214EC6A60027502A /* ActionViewController.swift */,
+				4E346FC8214EC6A60027502A /* MainInterface.storyboard */,
+				4E346FCB214EC6A60027502A /* Info.plist */,
+			);
+			path = "QTUM Signer";
+			sourceTree = "<group>";
+		};
 		94DECCBC55E0AE7D7EF532E6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -4904,6 +4939,7 @@
 		E7FD362F1DC4D07E00748177 = {
 			isa = PBXGroup;
 			children = (
+				4E346FC5214EC6A60027502A /* QTUM Signer */,
 				F94C279886F936AB7B4DA6F8 /* Frameworks */,
 				94DECCBC55E0AE7D7EF532E6 /* Pods */,
 				E7FD36391DC4D07E00748177 /* Products */,
@@ -4919,6 +4955,7 @@
 			isa = PBXGroup;
 			children = (
 				E7FD36381DC4D07E00748177 /* qtum wallet.app */,
+				4E346FC4214EC6A60027502A /* QTUM Signer.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -5134,6 +5171,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4E346FC3214EC6A60027502A /* QTUM Signer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E346FD1214EC6A60027502A /* Build configuration list for PBXNativeTarget "QTUM Signer" */;
+			buildPhases = (
+				4E346FC0214EC6A60027502A /* Sources */,
+				4E346FC1214EC6A60027502A /* Frameworks */,
+				4E346FC2214EC6A60027502A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QTUM Signer";
+			productName = "QTUM Signer";
+			productReference = 4E346FC4214EC6A60027502A /* QTUM Signer.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E7FD36371DC4D07E00748177 /* qtum wallet */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7FD364F1DC4D07E00748177 /* Build configuration list for PBXNativeTarget "qtum wallet" */;
@@ -5151,6 +5205,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4E346FCD214EC6A60027502A /* PBXTargetDependency */,
 			);
 			name = "qtum wallet";
 			productName = "qtum wallet";
@@ -5163,9 +5218,15 @@
 		E7FD36301DC4D07E00748177 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = QTUM;
 				TargetAttributes = {
+					4E346FC3214EC6A60027502A = {
+						CreatedOnToolsVersion = 9.4.1;
+						DevelopmentTeam = 8DXC3N7E7P;
+						ProvisioningStyle = Automatic;
+					};
 					E7FD36371DC4D07E00748177 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 8DXC3N7E7P;
@@ -5203,11 +5264,20 @@
 			projectRoot = "";
 			targets = (
 				E7FD36371DC4D07E00748177 /* qtum wallet */,
+				4E346FC3214EC6A60027502A /* QTUM Signer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4E346FC2214EC6A60027502A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E346FCA214EC6A60027502A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7FD36361DC4D07E00748177 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5355,6 +5425,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4E346FC0214EC6A60027502A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E346FC7214EC6A60027502A /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7FD36341DC4D07E00748177 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5908,7 +5986,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4E346FCD214EC6A60027502A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E346FC3214EC6A60027502A /* QTUM Signer */;
+			targetProxy = 4E346FCC214EC6A60027502A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		4E346FC8214EC6A60027502A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E346FC9214EC6A60027502A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		B32EEC681EB3545700512FED /* Send.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -6229,6 +6323,59 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4E346FCF214EC6A60027502A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DXC3N7E7P;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "QTUM Signer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.qtum.hack.QTUM-Signer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E346FD0214EC6A60027502A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DXC3N7E7P;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "QTUM Signer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.qtum.hack.QTUM-Signer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E7FD364D1DC4D07E00748177 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6582,6 +6729,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4E346FD1214EC6A60027502A /* Build configuration list for PBXNativeTarget "QTUM Signer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E346FCF214EC6A60027502A /* Debug */,
+				4E346FD0214EC6A60027502A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E7FD36331DC4D07E00748177 /* Build configuration list for PBXProject "qtum wallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
