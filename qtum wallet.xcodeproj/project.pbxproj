@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0C779EBBB0780FE8BF137970 /* libPods-qtum wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0903654DC429CD9C31C04908 /* libPods-qtum wallet.a */; };
-		513CF19DCEA07C5902F4BBA3 /* libPods-QTUM Watch Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */; };
 		B3014D601F2A1B8D007EAE7A /* WatchContractViewControllerDark.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D5F1F2A1B8D007EAE7A /* WatchContractViewControllerDark.m */; };
 		B3014D631F2A1B9E007EAE7A /* WatchContractViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D621F2A1B9E007EAE7A /* WatchContractViewControllerLight.m */; };
 		B3014D661F2A1BBB007EAE7A /* WatchTokensViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D651F2A1BBB007EAE7A /* WatchTokensViewControllerLight.m */; };
@@ -90,8 +89,6 @@
 		B3255C4C1E1CDD6500CD610B /* GradientViewWithAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3255C4B1E1CDD6500CD610B /* GradientViewWithAnimation.m */; };
 		B326327D1F9602B6001FF038 /* PasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = B326327C1F9602B6001FF038 /* PasswordView.m */; };
 		B3267F561FD1919300545573 /* NSOperationQueue+Timeout.m in Sources */ = {isa = PBXBuildFile; fileRef = B3267F551FD1919300545573 /* NSOperationQueue+Timeout.m */; };
-		B32805551FA7472200748E7E /* JKBigInteger_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B32805531FA7472200748E7E /* JKBigInteger_iOSTests.m */; };
-		B32805561FA7472200748E7E /* JKBigDecimal_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B32805541FA7472200748E7E /* JKBigDecimal_iOSTests.m */; };
 		B32805571FA7474B00748E7E /* JKBigInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = B328054C1FA744E200748E7E /* JKBigInteger.m */; };
 		B32805581FA7474B00748E7E /* JKBigDecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = B328054D1FA744E200748E7E /* JKBigDecimal.m */; };
 		B32805591FA7477D00748E7E /* tommath.c in Sources */ = {isa = PBXBuildFile; fileRef = B328054F1FA744FE00748E7E /* tommath.c */; };
@@ -154,13 +151,7 @@
 		B33EAF1D1E5C9020006125F3 /* RepeateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B33EAF1C1E5C9020006125F3 /* RepeateViewController.m */; };
 		B33EAF201E5C9FC0006125F3 /* AuthNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B33EAF1F1E5C9FC0006125F3 /* AuthNavigationController.m */; };
 		B33EAF231E5D6955006125F3 /* ExportWalletBrandKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B33EAF221E5D6955006125F3 /* ExportWalletBrandKeyViewController.m */; };
-		B33EAF8A1E5EC262006125F3 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33EAF891E5EC262006125F3 /* Messages.framework */; };
-		B33EAF8E1E5EC262006125F3 /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B33EAF8D1E5EC262006125F3 /* MessagesViewController.m */; };
-		B33EAF911E5EC263006125F3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33EAF8F1E5EC263006125F3 /* MainInterface.storyboard */; };
-		B33EAF931E5EC263006125F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33EAF921E5EC263006125F3 /* Assets.xcassets */; };
-		B33EAF971E5EC263006125F3 /* iMessageExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B33EAF881E5EC262006125F3 /* iMessageExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B33EAF9F1E5EE1EE006125F3 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B33EAF9E1E5EE1EE006125F3 /* NSString+Extension.m */; };
-		B33EAFA21E5F20F9006125F3 /* iMessageGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = B33EAFA11E5F20F9006125F3 /* iMessageGradientView.m */; };
 		B34228861F73CEAE00C4C381 /* SliderFeeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B34228851F73CEAE00C4C381 /* SliderFeeView.xib */; };
 		B34228881F73CF2700C4C381 /* SliderViewLight.xib in Resources */ = {isa = PBXBuildFile; fileRef = B34228871F73CF2700C4C381 /* SliderViewLight.xib */; };
 		B342288B1F73CF6400C4C381 /* SliderFeeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B342288A1F73CF6400C4C381 /* SliderFeeView.m */; };
@@ -168,7 +159,6 @@
 		B3427FCA1F54093B00182E95 /* AboutOutputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3427FC91F54093B00182E95 /* AboutOutputViewController.m */; };
 		B3427FCD1F54095400182E95 /* AboutOutputViewControllerDark.m in Sources */ = {isa = PBXBuildFile; fileRef = B3427FCC1F54095400182E95 /* AboutOutputViewControllerDark.m */; };
 		B3427FD01F54096100182E95 /* AboutOutputViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3427FCF1F54096100182E95 /* AboutOutputViewControllerLight.m */; };
-		B3427FD21F543D7D00182E95 /* ContractParametersInterpreterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3427FD11F543D7D00182E95 /* ContractParametersInterpreterTest.m */; };
 		B342DB621F60440B0052A367 /* TransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DB611F60440B0052A367 /* TransactionBuilder.m */; };
 		B342DB651F60443B0052A367 /* TransactionScriptBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DB641F60443B0052A367 /* TransactionScriptBuilder.m */; };
 		B342DB781F61808E0052A367 /* NSNumber+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DB771F61808E0052A367 /* NSNumber+Format.m */; };
@@ -181,8 +171,6 @@
 		B35130611E49C9930048A28C /* NewsCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B35130601E49C9930048A28C /* NewsCellModel.m */; };
 		B35130651E49DCBC0048A28C /* NewsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B35130641E49DCBC0048A28C /* NewsTableCell.m */; };
 		B35130681E49DF910048A28C /* ImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B35130671E49DF910048A28C /* ImageLoader.m */; };
-		B35497021F8BB9F500DEB004 /* WatchCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = B35497011F8BB9F500DEB004 /* WatchCoordinator.m */; };
-		B354970A1F8CE68A00DEB004 /* WatchDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B35497091F8CE68A00DEB004 /* WatchDataOperation.m */; };
 		B35572C71F90E886001AE34A /* NewsFacedeService.m in Sources */ = {isa = PBXBuildFile; fileRef = B35572C61F90E886001AE34A /* NewsFacedeService.m */; };
 		B35572CA1F90EFDE001AE34A /* NetworkingService.m in Sources */ = {isa = PBXBuildFile; fileRef = B35572C91F90EFDE001AE34A /* NetworkingService.m */; };
 		B35733271F97A69A00C64AAE /* ServiceLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = B35733261F97A69A00C64AAE /* ServiceLocator.m */; };
@@ -244,7 +232,6 @@
 		B371D8851E3A1D3B00A13EA3 /* NSBundle+StyleProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B371D87E1E3A1D3B00A13EA3 /* NSBundle+StyleProvider.m */; };
 		B371D8861E3A1D3B00A13EA3 /* NSNull+Catch.m in Sources */ = {isa = PBXBuildFile; fileRef = B371D8801E3A1D3B00A13EA3 /* NSNull+Catch.m */; };
 		B371D8871E3A1D3B00A13EA3 /* NSObject+Associating.m in Sources */ = {isa = PBXBuildFile; fileRef = B371D8821E3A1D3B00A13EA3 /* NSObject+Associating.m */; };
-		B379B4C21FADB81500274875 /* QTUMBigDecimalStringsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B379B4C11FADB81500274875 /* QTUMBigDecimalStringsTest.m */; };
 		B381CBE21F02872000142252 /* EnableFingerprintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B381CBE11F02872000142252 /* EnableFingerprintViewController.m */; };
 		B381CBE51F0291CB00142252 /* SecurityPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B381CBE41F0291CB00142252 /* SecurityPopupViewController.m */; };
 		B381CBEA1F029CB200142252 /* SecurityPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = B381CBE91F029CB200142252 /* SecurityPinView.m */; };
@@ -277,7 +264,6 @@
 		B392206A1F99FA9C00E8F7D9 /* QTUMImageTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B39220691F99FA9C00E8F7D9 /* QTUMImageTagCell.m */; };
 		B3A4EA4F1F502C2D008115D1 /* NSNumber+Comparison.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A4EA4E1F502C2D008115D1 /* NSNumber+Comparison.m */; };
 		B3A4EA521F502C40008115D1 /* NSDecimalNumber+Comparison.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A4EA511F502C40008115D1 /* NSDecimalNumber+Comparison.m */; };
-		B3BA14761F6A7E03004078A5 /* iMessageDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3BA14751F6A7E03004078A5 /* iMessageDataOperation.m */; };
 		B3C08B0D1ED2FE3000713B15 /* NSString+SHA3.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C08B0B1ED2FE3000713B15 /* NSString+SHA3.m */; };
 		B3C08B151ED3382300713B15 /* keccak.c in Sources */ = {isa = PBXBuildFile; fileRef = B3C08B141ED3382300713B15 /* keccak.c */; };
 		B3C08B181ED44DD900713B15 /* TemplateTokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C08B171ED44DD900713B15 /* TemplateTokenViewController.m */; };
@@ -295,7 +281,6 @@
 		B3C1363C1FFD047300AC3EB1 /* ConfirmWordCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C1363A1FFD047300AC3EB1 /* ConfirmWordCollectionViewCell.xib */; };
 		B3C136421FFD1A4900AC3EB1 /* ExampleWordCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C136401FFD1A4900AC3EB1 /* ExampleWordCollectionViewCell.m */; };
 		B3C136431FFD1A4900AC3EB1 /* ExampleWordCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C136411FFD1A4900AC3EB1 /* ExampleWordCollectionViewCell.xib */; };
-		B3C435311FC43EEE00DC5644 /* TextFieldWithLine.m in Sources */ = {isa = PBXBuildFile; fileRef = E7396AFE1DDF394C0002CD47 /* TextFieldWithLine.m */; };
 		B3C503B51ED56E8A005B49C0 /* WalletHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3487A261E92234B00BC66F1 /* WalletHeaderCell.m */; };
 		B3C856641FD5592000DAD5F4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C856631FD5592000DAD5F4 /* Default-568h@2x.png */; };
 		B3C8FAEA1F98922A000168AB /* QTUMFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C8FAE91F98922A000168AB /* QTUMFeedItem.m */; };
@@ -337,7 +322,6 @@
 		B3D555E81EDE00BE00CBDFCF /* SmartContractsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D555E71EDE00BE00CBDFCF /* SmartContractsListViewController.m */; };
 		B3D555EB1EDE00F900CBDFCF /* SmartContractListItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D555EA1EDE00F900CBDFCF /* SmartContractListItemCell.m */; };
 		B3D5FE3F1F569FEB006A2BF2 /* NSString+AbiRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D5FE3E1F569FEB006A2BF2 /* NSString+AbiRegex.m */; };
-		B3D5FE411F56A4DC006A2BF2 /* AbiRegexTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D5FE401F56A4DC006A2BF2 /* AbiRegexTest.m */; };
 		B3D5FE481F56AE83006A2BF2 /* AbiParameterTypeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D5FE471F56AE83006A2BF2 /* AbiParameterTypeArray.m */; };
 		B3D5FE4C1F56AEEB006A2BF2 /* AbiParameterTypeString.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D5FE4B1F56AEEB006A2BF2 /* AbiParameterTypeString.m */; };
 		B3D5FE4F1F56AEF7006A2BF2 /* AbiParameterTypeAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D5FE4E1F56AEF7006A2BF2 /* AbiParameterTypeAddress.m */; };
@@ -408,7 +392,6 @@
 		B3E0901F1FA9E097003F3B54 /* QTUMSwipableCellWithButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E0901E1FA9E097003F3B54 /* QTUMSwipableCellWithButtons.m */; };
 		B3E090221FAB0C83003F3B54 /* ContractPretendent.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E090211FAB0C83003F3B54 /* ContractPretendent.m */; };
 		B3E090251FAB4DD1003F3B54 /* QTUMContractLableWithMargins.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E090241FAB4DD1003F3B54 /* QTUMContractLableWithMargins.m */; };
-		B3E090271FAC4CEF003F3B54 /* QTUMBigDecimalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E090261FAC4CEF003F3B54 /* QTUMBigDecimalTest.m */; };
 		B3E159221ED6B1A200D70A87 /* AddNewTokensViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E159211ED6B1A200D70A87 /* AddNewTokensViewController.m */; };
 		B3E159251ED6E2C200D70A87 /* ChoseTokenPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E159241ED6E2C200D70A87 /* ChoseTokenPaymentViewController.m */; };
 		B3E159291ED6E3C500D70A87 /* ChoseTokenPaymentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E159281ED6E3C500D70A87 /* ChoseTokenPaymentCell.m */; };
@@ -463,7 +446,6 @@
 		B3F06D0A1E6993AC006341F7 /* SubscribeTokenDataDisplayManagerDark.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F06D091E6993AC006341F7 /* SubscribeTokenDataDisplayManagerDark.m */; };
 		B3F1492C1F489BB80032FC63 /* QStoreSearchTableViewCellDark.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F1492B1F489BB80032FC63 /* QStoreSearchTableViewCellDark.m */; };
 		B3F1492F1F489BC60032FC63 /* QStoreSearchTableViewCellLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F1492E1F489BC60032FC63 /* QStoreSearchTableViewCellLight.m */; };
-		B3F20A4F1E72872B0052C6F7 /* MYRIADPRO-REGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = B3F20A4E1E72871E0052C6F7 /* MYRIADPRO-REGULAR.OTF */; };
 		B3F5797B1F0D251C00A13571 /* OpenURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F5797A1F0D251C00A13571 /* OpenURLManager.m */; };
 		B3F76A701EDD667D00108DE9 /* SmartContractMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F76A6F1EDD667D00108DE9 /* SmartContractMenuViewController.m */; };
 		B3F76A731EDD671D00108DE9 /* ChoiseSmartContractCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F76A721EDD671D00108DE9 /* ChoiseSmartContractCell.m */; };
@@ -472,13 +454,8 @@
 		B3F76A941EDDB81600108DE9 /* Contracts in Resources */ = {isa = PBXBuildFile; fileRef = B3F76A931EDDB81600108DE9 /* Contracts */; };
 		B3FD74C91FE9456C00B1E1EA /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FD74C81FE9456C00B1E1EA /* libxml2.dylib */; };
 		D059BE7B1F84E4A70045ABA0 /* PaymentValuesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D059BE7A1F84E4A70045ABA0 /* PaymentValuesManager.m */; };
-		D08043581F838D6100B22606 /* WalletManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D08043571F838D6100B22606 /* WalletManagerTests.m */; };
-		D080435A1F839E0D00B22606 /* ContractManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D08043591F839E0D00B22606 /* ContractManagerTests.m */; };
-		D080435C1F83AAB700B22606 /* TemplateManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D080435B1F83AAB700B22606 /* TemplateManagerTests.m */; };
-		D080435E1F83C28F00B22606 /* WalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D080435D1F83C28F00B22606 /* WalletTests.m */; };
 		D09F83991F7BB2DB002F3098 /* CopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D09F83981F7BB2DB002F3098 /* CopyLabel.m */; };
 		D09F839C1F7BF308002F3098 /* QStoreCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D09F839B1F7BF308002F3098 /* QStoreCategory.m */; };
-		D56B020D09B5747897E3EA15 /* libPods-qtum walletTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2601E5D944F526E1947C2A50 /* libPods-qtum walletTests.a */; };
 		E703530A1F039297004ECCC9 /* QStoreSearchTableSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E70353091F039297004ECCC9 /* QStoreSearchTableSource.m */; };
 		E703530F1F03AC41004ECCC9 /* QStoreListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E703530E1F03AC41004ECCC9 /* QStoreListViewController.m */; };
 		E70353121F03AC59004ECCC9 /* QStoreListTableSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E70353111F03AC59004ECCC9 /* QStoreListTableSource.m */; };
@@ -520,16 +497,6 @@
 		E72631271EEAA9A7005AED8F /* SwitchParameterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E72631261EEAA9A7005AED8F /* SwitchParameterView.m */; };
 		E726312A1EEAAC5B005AED8F /* TextFieldParameterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E72631291EEAAC5B005AED8F /* TextFieldParameterView.m */; };
 		E727F1781E02749D0080E79D /* Wallet.m in Sources */ = {isa = PBXBuildFile; fileRef = E727F1771E02749D0080E79D /* Wallet.m */; };
-		E730AB581EE6A5D100132711 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E730AB561EE6A5D100132711 /* Interface.storyboard */; };
-		E730AB5A1EE6A5D100132711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E730AB591EE6A5D100132711 /* Assets.xcassets */; };
-		E730AB611EE6A5D100132711 /* QTUM Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E730AB601EE6A5D100132711 /* QTUM Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E730AB691EE6A5D100132711 /* QRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = E730AB681EE6A5D100132711 /* QRCodeController.m */; };
-		E730AB6C1EE6A5D100132711 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E730AB6B1EE6A5D100132711 /* ExtensionDelegate.m */; };
-		E730AB6F1EE6A5D200132711 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E730AB6E1EE6A5D200132711 /* NotificationController.m */; };
-		E730AB721EE6A5D200132711 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E730AB711EE6A5D200132711 /* ComplicationController.m */; };
-		E730AB741EE6A5D200132711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E730AB731EE6A5D200132711 /* Assets.xcassets */; };
-		E730AB781EE6A5D200132711 /* QTUM Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E730AB541EE6A5D100132711 /* QTUM Watch.app */; };
-		E730AB851EE6A64700132711 /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E730AB841EE6A64700132711 /* SessionManager.m */; };
 		E730AB881EE6ACCA00132711 /* iOSSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E730AB871EE6ACCA00132711 /* iOSSessionManager.m */; };
 		E73357091F3D897700EE0D8B /* QStoreContractElement.m in Sources */ = {isa = PBXBuildFile; fileRef = E73357081F3D897700EE0D8B /* QStoreContractElement.m */; };
 		E733570C1F3DA90900EE0D8B /* QStoreBuyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E733570B1F3DA90900EE0D8B /* QStoreBuyRequest.m */; };
@@ -604,7 +571,6 @@
 		E7881B241F0BB7C700BD6AB2 /* proximanova-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7881B101F0BB7C700BD6AB2 /* proximanova-bold.otf */; };
 		E7881B331F0BB7C700BD6AB2 /* proximanova-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7881B131F0BB7C700BD6AB2 /* proximanova-light.otf */; };
 		E7881B421F0BB7C700BD6AB2 /* proximanova-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7881B161F0BB7C700BD6AB2 /* proximanova-regular.otf */; };
-		E7881B451F0BB7C700BD6AB2 /* proximanova-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7881B161F0BB7C700BD6AB2 /* proximanova-regular.otf */; };
 		E7881B471F0BB7C700BD6AB2 /* proximanova-semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7881B171F0BB7C700BD6AB2 /* proximanova-semibold.otf */; };
 		E7881B741F0BC63C00BD6AB2 /* NewPaymentLightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7881B731F0BC63C00BD6AB2 /* NewPaymentLightViewController.m */; };
 		E7881B771F0BC6E200BD6AB2 /* NewPaymentDarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7881B761F0BC6E200BD6AB2 /* NewPaymentDarkViewController.m */; };
@@ -627,12 +593,6 @@
 		E798463D1F0D28A3002A516A /* WalletTableSourceLight.m in Sources */ = {isa = PBXBuildFile; fileRef = E798463C1F0D28A3002A516A /* WalletTableSourceLight.m */; };
 		E79846401F0D2F57002A516A /* TableSourcesFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E798463F1F0D2F57002A516A /* TableSourcesFactory.m */; };
 		E7B758531EEFDB32004AF200 /* BackupContractsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B758521EEFDB32004AF200 /* BackupContractsViewController.m */; };
-		E7B7585A1EF016FD004AF200 /* WalletController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B758591EF016FD004AF200 /* WalletController.m */; };
-		E7B7585F1EF017C5004AF200 /* BalanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B7585E1EF017C5004AF200 /* BalanceCell.m */; };
-		E7B758601EF01AF2004AF200 /* simplonmono-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B321F2DA1EBB643100C813D0 /* simplonmono-medium.ttf */; };
-		E7B758681EF01C75004AF200 /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B758671EF01C75004AF200 /* HistoryCell.m */; };
-		E7B758711EF139F7004AF200 /* WatchWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B758701EF139F7004AF200 /* WatchWallet.m */; };
-		E7B758741EF13A89004AF200 /* WatchHistoryElement.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B758731EF13A89004AF200 /* WatchHistoryElement.m */; };
 		E7C101B51F13CBBE00848526 /* BorderedLabelDark.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C101B41F13CBBE00848526 /* BorderedLabelDark.m */; };
 		E7C101B81F13CBC700848526 /* BorderedLabelLight.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C101B71F13CBC700848526 /* BorderedLabelLight.m */; };
 		E7C101BB1F14B5DB00848526 /* InnerShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C101BA1F14B5DB00848526 /* InnerShadowView.m */; };
@@ -654,7 +614,6 @@
 		E7EA2CB81ED42DB500AFD5D0 /* LanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EA2CB71ED42DB500AFD5D0 /* LanguageViewController.m */; };
 		E7EA2CBB1ED42DCB00AFD5D0 /* LanguageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EA2CBA1ED42DCB00AFD5D0 /* LanguageTableViewCell.m */; };
 		E7EA2CBE1ED42DE100AFD5D0 /* LanguageTableSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EA2CBD1ED42DE100AFD5D0 /* LanguageTableSource.m */; };
-		E7EB859C1FE7F30300FCA460 /* config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E7EB859B1FE7F30300FCA460 /* config.xcconfig */; };
 		E7FA0CB31ECD80AF00702C4E /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FA0CB21ECD80AF00702C4E /* PopUpViewController.m */; };
 		E7FA0CB61ECD80E200702C4E /* NoInternetConnectionPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FA0CB51ECD80E200702C4E /* NoInternetConnectionPopUpViewController.m */; };
 		E7FA0CB91ECD914200702C4E /* PopupService.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FA0CB81ECD914200702C4E /* PopupService.m */; };
@@ -667,37 +626,6 @@
 		E7FD36661DC76EBC00748177 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FD36651DC76EBC00748177 /* RequestManager.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B33EAF951E5EC263006125F3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E7FD36301DC4D07E00748177 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B33EAF871E5EC262006125F3;
-			remoteInfo = iMessageExtension;
-		};
-		B3A4EA5E1F502E66008115D1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E7FD36301DC4D07E00748177 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E7FD36371DC4D07E00748177;
-			remoteInfo = "qtum wallet";
-		};
-		E730AB621EE6A5D100132711 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E7FD36301DC4D07E00748177 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E730AB5F1EE6A5D100132711;
-			remoteInfo = "QTUM Watch Extension";
-		};
-		E730AB761EE6A5D200132711 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E7FD36301DC4D07E00748177 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E730AB531EE6A5D100132711;
-			remoteInfo = "QTUM Watch";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		B33EAF9B1E5EC263006125F3 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -705,18 +633,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				B33EAF971E5EC263006125F3 /* iMessageExtension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E730AB7E1EE6A5D200132711 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				E730AB611EE6A5D100132711 /* QTUM Watch Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -727,7 +643,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				E730AB781EE6A5D200132711 /* QTUM Watch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1045,7 +960,6 @@
 		B33EAF211E5D6955006125F3 /* ExportWalletBrandKeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExportWalletBrandKeyViewController.h; sourceTree = "<group>"; };
 		B33EAF221E5D6955006125F3 /* ExportWalletBrandKeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExportWalletBrandKeyViewController.m; sourceTree = "<group>"; };
 		B33EAF241E5DB039006125F3 /* qtum wallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "qtum wallet.entitlements"; sourceTree = "<group>"; };
-		B33EAF881E5EC262006125F3 /* iMessageExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iMessageExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B33EAF891E5EC262006125F3 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		B33EAF8C1E5EC262006125F3 /* MessagesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
 		B33EAF8D1E5EC262006125F3 /* MessagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MessagesViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -1308,7 +1222,6 @@
 		B3A4EA501F502C40008115D1 /* NSDecimalNumber+Comparison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+Comparison.h"; sourceTree = "<group>"; };
 		B3A4EA511F502C40008115D1 /* NSDecimalNumber+Comparison.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+Comparison.m"; sourceTree = "<group>"; };
 		B3A4EA531F502CD1008115D1 /* NSDecimalNumberComparisonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDecimalNumberComparisonTests.m; sourceTree = "<group>"; };
-		B3A4EA591F502E65008115D1 /* qtum walletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "qtum walletTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B454C81FDEBE4700FB3E8C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/RestoreContractsPopUp.strings"; sourceTree = "<group>"; };
 		B3B454CA1FDEBE4900FB3E8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/RestoreContractsPopUp.strings; sourceTree = "<group>"; };
 		B3B454CC1FDEBE4F00FB3E8C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SecurityPopup.strings"; sourceTree = "<group>"; };
@@ -1866,11 +1779,9 @@
 		E72631291EEAAC5B005AED8F /* TextFieldParameterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldParameterView.m; sourceTree = "<group>"; };
 		E727F1761E02749D0080E79D /* Wallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wallet.h; sourceTree = "<group>"; };
 		E727F1771E02749D0080E79D /* Wallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wallet.m; sourceTree = "<group>"; };
-		E730AB541EE6A5D100132711 /* QTUM Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QTUM Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E730AB571EE6A5D100132711 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		E730AB591EE6A5D100132711 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E730AB5B1EE6A5D100132711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E730AB601EE6A5D100132711 /* QTUM Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "QTUM Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E730AB661EE6A5D100132711 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		E730AB671EE6A5D100132711 /* QRCodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeController.h; sourceTree = "<group>"; };
 		E730AB681EE6A5D100132711 /* QRCodeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeController.m; sourceTree = "<group>"; };
@@ -2145,7 +2056,6 @@
 		E7EA2CBA1ED42DCB00AFD5D0 /* LanguageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageTableViewCell.m; sourceTree = "<group>"; };
 		E7EA2CBC1ED42DE100AFD5D0 /* LanguageTableSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageTableSource.h; sourceTree = "<group>"; };
 		E7EA2CBD1ED42DE100AFD5D0 /* LanguageTableSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageTableSource.m; sourceTree = "<group>"; };
-		E7EB859B1FE7F30300FCA460 /* config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = config.xcconfig; sourceTree = "<group>"; };
 		E7FA0CB11ECD80AF00702C4E /* PopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpViewController.h; sourceTree = "<group>"; };
 		E7FA0CB21ECD80AF00702C4E /* PopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpViewController.m; sourceTree = "<group>"; };
 		E7FA0CB41ECD80E200702C4E /* NoInternetConnectionPopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoInternetConnectionPopUpViewController.h; sourceTree = "<group>"; };
@@ -2168,37 +2078,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		288DB2799DDC77AE01F9FFA0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B33EAF851E5EC262006125F3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B33EAF8A1E5EC262006125F3 /* Messages.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3A4EA561F502E65008115D1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D56B020D09B5747897E3EA15 /* libPods-qtum walletTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E730AB5D1EE6A5D100132711 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				513CF19DCEA07C5902F4BBA3 /* libPods-QTUM Watch Extension.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E7FD36351DC4D07E00748177 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -5025,7 +4904,6 @@
 		E7FD362F1DC4D07E00748177 = {
 			isa = PBXGroup;
 			children = (
-				E7EB859B1FE7F30300FCA460 /* config.xcconfig */,
 				F94C279886F936AB7B4DA6F8 /* Frameworks */,
 				94DECCBC55E0AE7D7EF532E6 /* Pods */,
 				E7FD36391DC4D07E00748177 /* Products */,
@@ -5041,10 +4919,6 @@
 			isa = PBXGroup;
 			children = (
 				E7FD36381DC4D07E00748177 /* qtum wallet.app */,
-				B33EAF881E5EC262006125F3 /* iMessageExtension.appex */,
-				E730AB541EE6A5D100132711 /* QTUM Watch.app */,
-				E730AB601EE6A5D100132711 /* QTUM Watch Extension.appex */,
-				B3A4EA591F502E65008115D1 /* qtum walletTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -5260,82 +5134,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B33EAF871E5EC262006125F3 /* iMessageExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B33EAF9A1E5EC263006125F3 /* Build configuration list for PBXNativeTarget "iMessageExtension" */;
-			buildPhases = (
-				B33EAF841E5EC262006125F3 /* Sources */,
-				B33EAF851E5EC262006125F3 /* Frameworks */,
-				B33EAF861E5EC262006125F3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = iMessageExtension;
-			productName = iMessageExtension;
-			productReference = B33EAF881E5EC262006125F3 /* iMessageExtension.appex */;
-			productType = "com.apple.product-type.app-extension.messages";
-		};
-		B3A4EA581F502E65008115D1 /* qtum walletTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B3A4EA601F502E66008115D1 /* Build configuration list for PBXNativeTarget "qtum walletTests" */;
-			buildPhases = (
-				321C587E9A4F2B82C7DDE849 /* [CP] Check Pods Manifest.lock */,
-				B3A4EA551F502E65008115D1 /* Sources */,
-				B3A4EA561F502E65008115D1 /* Frameworks */,
-				B3A4EA571F502E65008115D1 /* Resources */,
-				EFC4163D6348EB02957DC3DD /* [CP] Embed Pods Frameworks */,
-				45AB1922DB734C7BE18A4179 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B3A4EA5F1F502E66008115D1 /* PBXTargetDependency */,
-			);
-			name = "qtum walletTests";
-			productName = "qtum walletTests";
-			productReference = B3A4EA591F502E65008115D1 /* qtum walletTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E730AB531EE6A5D100132711 /* QTUM Watch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E730AB7F1EE6A5D200132711 /* Build configuration list for PBXNativeTarget "QTUM Watch" */;
-			buildPhases = (
-				E730AB521EE6A5D100132711 /* Resources */,
-				E730AB7E1EE6A5D200132711 /* Embed App Extensions */,
-				288DB2799DDC77AE01F9FFA0 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E730AB631EE6A5D100132711 /* PBXTargetDependency */,
-			);
-			name = "QTUM Watch";
-			productName = "QTUM Watch";
-			productReference = E730AB541EE6A5D100132711 /* QTUM Watch.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		E730AB5F1EE6A5D100132711 /* QTUM Watch Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E730AB7D1EE6A5D200132711 /* Build configuration list for PBXNativeTarget "QTUM Watch Extension" */;
-			buildPhases = (
-				89BC4DFE66310CB728A32FF3 /* [CP] Check Pods Manifest.lock */,
-				E730AB5C1EE6A5D100132711 /* Sources */,
-				E730AB5D1EE6A5D100132711 /* Frameworks */,
-				E730AB5E1EE6A5D100132711 /* Resources */,
-				C88B65B85B6E62E33BD6E667 /* [CP] Embed Pods Frameworks */,
-				15CEF20E879ACBFC8916FCE6 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "QTUM Watch Extension";
-			productName = "QTUM Watch Extension";
-			productReference = E730AB601EE6A5D100132711 /* QTUM Watch Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
 		E7FD36371DC4D07E00748177 /* qtum wallet */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7FD364F1DC4D07E00748177 /* Build configuration list for PBXNativeTarget "qtum wallet" */;
@@ -5344,19 +5142,15 @@
 				E7FD36341DC4D07E00748177 /* Sources */,
 				E7FD36351DC4D07E00748177 /* Frameworks */,
 				E7FD36361DC4D07E00748177 /* Resources */,
-				094AC2E300B2D4BEF04A6420 /* [CP] Embed Pods Frameworks */,
 				BBDAA643D3F5A61C3D80AB51 /* [CP] Copy Pods Resources */,
 				B33EAF9B1E5EC263006125F3 /* Embed App Extensions */,
 				B3C4553C1E8958D900420D7C /* ShellScript */,
 				E78D0C9A1ED2F02800CB91FF /* ShellScript */,
-				B3C8566C1FD577E900DAD5F4 /* ShellScript */,
 				E730AB801EE6A5D200132711 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B33EAF961E5EC263006125F3 /* PBXTargetDependency */,
-				E730AB771EE6A5D200132711 /* PBXTargetDependency */,
 			);
 			name = "qtum wallet";
 			productName = "qtum wallet";
@@ -5372,67 +5166,23 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = QTUM;
 				TargetAttributes = {
-					B33EAF871E5EC262006125F3 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = DEH7XV88GA;
-						ProvisioningStyle = Manual;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-							com.apple.DataProtection = {
-								enabled = 1;
-							};
-							com.apple.Push = {
-								enabled = 1;
-							};
-						};
-					};
-					B3A4EA581F502E65008115D1 = {
-						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
-						TestTargetID = E7FD36371DC4D07E00748177;
-					};
-					E730AB531EE6A5D100132711 = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = DEH7XV88GA;
-						ProvisioningStyle = Manual;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					E730AB5F1EE6A5D100132711 = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = DEH7XV88GA;
-						ProvisioningStyle = Manual;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-							com.apple.DataProtection = {
-								enabled = 1;
-							};
-						};
-					};
 					E7FD36371DC4D07E00748177 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = DEH7XV88GA;
+						DevelopmentTeam = 8DXC3N7E7P;
 						LastSwiftMigration = 0920;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.DataProtection = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.iCloud = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -5453,51 +5203,11 @@
 			projectRoot = "";
 			targets = (
 				E7FD36371DC4D07E00748177 /* qtum wallet */,
-				B33EAF871E5EC262006125F3 /* iMessageExtension */,
-				E730AB531EE6A5D100132711 /* QTUM Watch */,
-				E730AB5F1EE6A5D100132711 /* QTUM Watch Extension */,
-				B3A4EA581F502E65008115D1 /* qtum walletTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B33EAF861E5EC262006125F3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B3F20A4F1E72872B0052C6F7 /* MYRIADPRO-REGULAR.OTF in Resources */,
-				B33EAF931E5EC263006125F3 /* Assets.xcassets in Resources */,
-				B33EAF911E5EC263006125F3 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3A4EA571F502E65008115D1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E730AB521EE6A5D100132711 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E730AB5A1EE6A5D100132711 /* Assets.xcassets in Resources */,
-				E7881B451F0BB7C700BD6AB2 /* proximanova-regular.otf in Resources */,
-				E730AB581EE6A5D100132711 /* Interface.storyboard in Resources */,
-				E7B758601EF01AF2004AF200 /* simplonmono-medium.ttf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E730AB5E1EE6A5D100132711 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E730AB741EE6A5D200132711 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E7FD36361DC4D07E00748177 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5506,7 +5216,6 @@
 				B31441101FB4823D004FE08C /* Roboto-Regular.ttf in Resources */,
 				B30960BB1F62EAF000BEF9D2 /* Avenir.ttc in Resources */,
 				B3EE8F571F13BAE000131823 /* simplonmono-regular.ttf in Resources */,
-				E7EB859C1FE7F30300FCA460 /* config.xcconfig in Resources */,
 				E78DD7641F4C2B6A00B25FB3 /* AddressTransferPopup.storyboard in Resources */,
 				B3045BF21FF23A6E003089F1 /* NoContractViewLight.xib in Resources */,
 				E70CFD571F1F66BF00230C81 /* SelectSearchTypeView.xib in Resources */,
@@ -5578,87 +5287,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		094AC2E300B2D4BEF04A6420 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qtum wallet/Pods-qtum wallet-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		15CEF20E879ACBFC8916FCE6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QTUM Watch Extension/Pods-QTUM Watch Extension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		321C587E9A4F2B82C7DDE849 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-qtum walletTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		45AB1922DB734C7BE18A4179 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qtum walletTests/Pods-qtum walletTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		89BC4DFE66310CB728A32FF3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-QTUM Watch Extension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B3C4553C1E8958D900420D7C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -5673,19 +5301,6 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
-		B3C8566C1FD577E900DAD5F4 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cp \"${APP_GOOGLE_SERVICE_PLIST}\" \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleService-Info.plist\"";
-		};
 		BBDAA643D3F5A61C3D80AB51 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -5698,26 +5313,12 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qtum wallet/Pods-qtum wallet-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C88B65B85B6E62E33BD6E667 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QTUM Watch Extension/Pods-QTUM Watch Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E78D0C9A1ED2F02800CB91FF /* ShellScript */ = {
@@ -5732,21 +5333,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ \"$(FABRIC_API_KEY)\" = \"<FABRIC_API_KEY>\"]\nthen\necho \"${PODS_ROOT}/Fabric/run\" $(FABRIC_API_KEY) $(FABRIC_BUILD_SECRET)\nelse\necho \"fabric not initialized\"\nfi";
-		};
-		EFC4163D6348EB02957DC3DD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qtum walletTests/Pods-qtum walletTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		F79955B856A388C1F1C8305A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -5769,53 +5355,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B33EAF841E5EC262006125F3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B33EAFA21E5F20F9006125F3 /* iMessageGradientView.m in Sources */,
-				B3BA14761F6A7E03004078A5 /* iMessageDataOperation.m in Sources */,
-				B3C435311FC43EEE00DC5644 /* TextFieldWithLine.m in Sources */,
-				B33EAF8E1E5EC262006125F3 /* MessagesViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3A4EA551F502E65008115D1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D08043581F838D6100B22606 /* WalletManagerTests.m in Sources */,
-				B3E090271FAC4CEF003F3B54 /* QTUMBigDecimalTest.m in Sources */,
-				D080435A1F839E0D00B22606 /* ContractManagerTests.m in Sources */,
-				D080435E1F83C28F00B22606 /* WalletTests.m in Sources */,
-				B3427FD21F543D7D00182E95 /* ContractParametersInterpreterTest.m in Sources */,
-				D080435C1F83AAB700B22606 /* TemplateManagerTests.m in Sources */,
-				B32805561FA7472200748E7E /* JKBigDecimal_iOSTests.m in Sources */,
-				B32805551FA7472200748E7E /* JKBigInteger_iOSTests.m in Sources */,
-				B379B4C21FADB81500274875 /* QTUMBigDecimalStringsTest.m in Sources */,
-				B3D5FE411F56A4DC006A2BF2 /* AbiRegexTest.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E730AB5C1EE6A5D100132711 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E730AB851EE6A64700132711 /* SessionManager.m in Sources */,
-				E730AB6C1EE6A5D100132711 /* ExtensionDelegate.m in Sources */,
-				E7B758681EF01C75004AF200 /* HistoryCell.m in Sources */,
-				E7B758741EF13A89004AF200 /* WatchHistoryElement.m in Sources */,
-				B35497021F8BB9F500DEB004 /* WatchCoordinator.m in Sources */,
-				E730AB721EE6A5D200132711 /* ComplicationController.m in Sources */,
-				E730AB691EE6A5D100132711 /* QRCodeController.m in Sources */,
-				E7B758711EF139F7004AF200 /* WatchWallet.m in Sources */,
-				E7B7585F1EF017C5004AF200 /* BalanceCell.m in Sources */,
-				E7B7585A1EF016FD004AF200 /* WalletController.m in Sources */,
-				B354970A1F8CE68A00DEB004 /* WatchDataOperation.m in Sources */,
-				E730AB6F1EE6A5D200132711 /* NotificationController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E7FD36341DC4D07E00748177 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -6369,29 +5908,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		B33EAF961E5EC263006125F3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B33EAF871E5EC262006125F3 /* iMessageExtension */;
-			targetProxy = B33EAF951E5EC263006125F3 /* PBXContainerItemProxy */;
-		};
-		B3A4EA5F1F502E66008115D1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E7FD36371DC4D07E00748177 /* qtum wallet */;
-			targetProxy = B3A4EA5E1F502E66008115D1 /* PBXContainerItemProxy */;
-		};
-		E730AB631EE6A5D100132711 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E730AB5F1EE6A5D100132711 /* QTUM Watch Extension */;
-			targetProxy = E730AB621EE6A5D100132711 /* PBXContainerItemProxy */;
-		};
-		E730AB771EE6A5D200132711 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E730AB531EE6A5D100132711 /* QTUM Watch */;
-			targetProxy = E730AB761EE6A5D200132711 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		B32EEC681EB3545700512FED /* Send.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -6713,171 +6229,8 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B33EAF981E5EC263006125F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				CODE_SIGN_ENTITLEMENTS = iMessageExtension/iMessageExtension.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = DEH7XV88GA;
-				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = iMessageExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.qtum.qtum-wallet.iMessageExtension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fd5e8146-98b9-4000-a829-6b7bada50011";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development org.qtum.qtum-wallet.iMessageExtension";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B33EAF991E5EC263006125F3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				CODE_SIGN_ENTITLEMENTS = iMessageExtension/iMessageExtension.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = DEH7XV88GA;
-				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = iMessageExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.qtum.qtum-wallet.iMessageExtension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fd5e8146-98b9-4000-a829-6b7bada50011";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development org.qtum.qtum-wallet.iMessageExtension";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		B3A4EA611F502E66008115D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D71F3943F2787CBE5AE12D46 /* Pods-qtum walletTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "qtum walletTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qtum.qtum-walletTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/qtum wallet.app/qtum wallet";
-			};
-			name = Debug;
-		};
-		B3A4EA621F502E66008115D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C288131FA2EA3C838AF7336 /* Pods-qtum walletTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "qtum walletTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qtum.qtum-walletTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/qtum wallet.app/qtum wallet";
-			};
-			name = Release;
-		};
-		E730AB791EE6A5D200132711 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "QTUM Watch/QTUM Watch.entitlements";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = DEH7XV88GA;
-				ENABLE_BITCODE = YES;
-				IBSC_MODULE = QTUM_Watch_Extension;
-				INFOPLIST_FILE = "QTUM Watch/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.qtum.qtum-wallet.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "53a08a14-2f79-4b85-bb43-488abe57ec77";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development org.qtum.qtum-wallet.watchkitapp";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Debug;
-		};
-		E730AB7A1EE6A5D200132711 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "QTUM Watch/QTUM Watch.entitlements";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = DEH7XV88GA;
-				ENABLE_BITCODE = YES;
-				IBSC_MODULE = QTUM_Watch_Extension;
-				INFOPLIST_FILE = "QTUM Watch/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.qtum.qtum-wallet.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "53a08a14-2f79-4b85-bb43-488abe57ec77";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development org.qtum.qtum-wallet.watchkitapp";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Release;
-		};
-		E730AB7B1EE6A5D200132711 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3E96B8E4986BB8AF3BD6A7F /* Pods-QTUM Watch Extension.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "QTUM Watch Extension/QTUM Watch Extension.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = DEH7XV88GA;
-				ENABLE_BITCODE = YES;
-				INFOPLIST_FILE = "QTUM Watch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.qtum.qtum-wallet.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "db76982e-30fb-496e-98c7-e58a905007f5";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development org.qtum.qtum-wallet.watchkitapp.watchkitextension";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Debug;
-		};
-		E730AB7C1EE6A5D200132711 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DCA96264341BA8A5D0C98FD /* Pods-QTUM Watch Extension.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "QTUM Watch Extension/QTUM Watch Extension.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = DEH7XV88GA;
-				ENABLE_BITCODE = YES;
-				INFOPLIST_FILE = "QTUM Watch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.qtum.qtum-wallet.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "db76982e-30fb-496e-98c7-e58a905007f5";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development org.qtum.qtum-wallet.watchkitapp.watchkitextension";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Release;
-		};
 		E7FD364D1DC4D07E00748177 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7EB859B1FE7F30300FCA460 /* config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -6937,7 +6290,6 @@
 		};
 		E7FD364E1DC4D07E00748177 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7EB859B1FE7F30300FCA460 /* config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -6997,10 +6349,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "qtum wallet/qtum wallet.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = DEH7XV88GA;
+				DEVELOPMENT_TEAM = 8DXC3N7E7P;
 				ENABLE_BITCODE = NO;
 				ENVIRONMENT = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7099,10 +6452,10 @@
 					"\"UIKit\"",
 					"-w",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.qtum.qtum-wallet";
+				PRODUCT_BUNDLE_IDENTIFIER = io.qtum.hack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5bdd07ba-89d2-4d59-a4a9-ec5c15ddf3fb";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development org.qtum.qtum-wallet";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -7116,9 +6469,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "qtum wallet/qtum wallet.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = DEH7XV88GA;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DXC3N7E7P;
 				ENABLE_BITCODE = NO;
 				ENVIRONMENT = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7217,10 +6571,10 @@
 					"\"UIKit\"",
 					"-w",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.qtum.qtum-wallet";
+				PRODUCT_BUNDLE_IDENTIFIER = io.qtum.hack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5bdd07ba-89d2-4d59-a4a9-ec5c15ddf3fb";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development org.qtum.qtum-wallet";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -7228,42 +6582,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B33EAF9A1E5EC263006125F3 /* Build configuration list for PBXNativeTarget "iMessageExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B33EAF981E5EC263006125F3 /* Debug */,
-				B33EAF991E5EC263006125F3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B3A4EA601F502E66008115D1 /* Build configuration list for PBXNativeTarget "qtum walletTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B3A4EA611F502E66008115D1 /* Debug */,
-				B3A4EA621F502E66008115D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E730AB7D1EE6A5D200132711 /* Build configuration list for PBXNativeTarget "QTUM Watch Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E730AB7B1EE6A5D200132711 /* Debug */,
-				E730AB7C1EE6A5D200132711 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E730AB7F1EE6A5D200132711 /* Build configuration list for PBXNativeTarget "QTUM Watch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E730AB791EE6A5D200132711 /* Debug */,
-				E730AB7A1EE6A5D200132711 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		E7FD36331DC4D07E00748177 /* Build configuration list for PBXProject "qtum wallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

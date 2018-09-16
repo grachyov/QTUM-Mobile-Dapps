@@ -41,7 +41,7 @@
     [NSUserDefaults saveCurrentVersion:[[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"]];
     [NSUserDefaults saveIsRPCOnSetting:NO];
     
-    BOOL isMainNetSettings = [[[[NSBundle mainBundle] infoDictionary] objectForKey:@"APP_IS_MAINNET_SETTINGS"] boolValue];
+    BOOL isMainNetSettings = NO;
     
     [NSUserDefaults saveIsMainnetSetting:isMainNetSettings];
 

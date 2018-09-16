@@ -5,13 +5,15 @@
 	<key>APP_IS_MAINNET_SETTINGS</key>
 	<string>$(APP_IS_MAINNET_SETTINGS)</string>
 	<key>APP_SERVER_URL</key>
-	<string>$(APP_SERVER_SCHEME):/$()/$(APP_SERVER_HOST)</string>
+	<string>https:/$()/testnet-walletapi.qtum.org</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>EN</string>
+	<key>CFBundleDisplayName</key>
+	<string>QTUM</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>$(APP_BUNDLE_IDENTIFIER)</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>$(CFBundleInfoDictionaryVersion)</string>
 	<key>CFBundleName</key>
