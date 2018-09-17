@@ -84,9 +84,8 @@
 }
 
 - (UIViewController *)browser {
-    UIViewController *browser = [UIViewController controllerInStoryboard:@"Browser" withIdentifire:@"BrowserViewController"];
-    
-    return [[UIViewController alloc] init];
+    UIViewController *browser = [UIViewController controllerInStoryboard:@"Browser" withIdentifire:@"BrowserViewController"];    
+    return browser;
 }
 
 - (UIViewController *)profileFlowTab {

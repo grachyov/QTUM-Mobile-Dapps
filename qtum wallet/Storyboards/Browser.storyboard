@@ -10,16 +10,58 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Browser View Controller-->
         <scene sceneID="GIm-Zw-h5m">
             <objects>
-                <viewController storyboardIdentifier="BrowserViewController" id="7Pd-Xs-7Np" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BrowserViewController" id="7Pd-Xs-7Np" customClass="BrowserViewController" customModule="qtum_wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DzU-iZ-65l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dapp address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5c5-px-JCu" userLabel="siteTextField">
+                                <rect key="frame" x="20" y="30" width="335" height="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03L-Hw-Qcj">
+                                <rect key="frame" x="-0.5" y="80" width="375" height="587"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZk-iT-AF0">
+                                <rect key="frame" x="105" y="325.5" width="165" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Open Demo Dapp"/>
+                                <connections>
+                                    <action selector="demoDappButtonTapped:" destination="7Pd-Xs-7Np" eventType="touchUpInside" id="Qv2-um-fm9"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dtX-vp-rDd">
+                                <rect key="frame" x="177" y="333.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XZk-iT-AF0" firstAttribute="centerX" secondItem="1cP-eh-MRS" secondAttribute="centerX" id="82C-xk-hU2"/>
+                            <constraint firstItem="03L-Hw-Qcj" firstAttribute="width" secondItem="DzU-iZ-65l" secondAttribute="width" id="AMR-kJ-T2v"/>
+                            <constraint firstItem="5c5-px-JCu" firstAttribute="centerX" secondItem="1cP-eh-MRS" secondAttribute="centerX" id="DKm-il-Lyl"/>
+                            <constraint firstItem="dtX-vp-rDd" firstAttribute="centerX" secondItem="1cP-eh-MRS" secondAttribute="centerX" id="EQA-D3-Sf8"/>
+                            <constraint firstItem="5c5-px-JCu" firstAttribute="top" secondItem="1cP-eh-MRS" secondAttribute="top" constant="10" id="KsP-PW-DR2"/>
+                            <constraint firstItem="1cP-eh-MRS" firstAttribute="bottom" secondItem="03L-Hw-Qcj" secondAttribute="bottom" id="SXV-Lw-FDy"/>
+                            <constraint firstItem="03L-Hw-Qcj" firstAttribute="centerX" secondItem="1cP-eh-MRS" secondAttribute="centerX" id="Zko-Oa-jFW"/>
+                            <constraint firstItem="XZk-iT-AF0" firstAttribute="centerY" secondItem="1cP-eh-MRS" secondAttribute="centerY" id="a3D-4r-n65"/>
+                            <constraint firstItem="03L-Hw-Qcj" firstAttribute="top" secondItem="5c5-px-JCu" secondAttribute="bottom" constant="20" id="e5Q-1X-cgQ"/>
+                            <constraint firstItem="5c5-px-JCu" firstAttribute="width" secondItem="DzU-iZ-65l" secondAttribute="width" constant="-40" id="ktV-mS-AlO"/>
+                            <constraint firstItem="dtX-vp-rDd" firstAttribute="centerY" secondItem="1cP-eh-MRS" secondAttribute="centerY" id="vFF-eI-Xlg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1cP-eh-MRS"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="dtX-vp-rDd" id="OtO-pk-FKU"/>
+                        <outlet property="demoDappButton" destination="XZk-iT-AF0" id="sJx-lL-8tA"/>
+                        <outlet property="siteTextField" destination="5c5-px-JCu" id="qr3-E8-Gkd"/>
+                        <outlet property="webViewPlaceholder" destination="03L-Hw-Qcj" id="uiO-ne-hez"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6XO-XO-eQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

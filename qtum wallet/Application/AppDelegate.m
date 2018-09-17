@@ -45,13 +45,14 @@
     NSString *amount = [NSString valueForKey:@"amount" fromQueryItems:queryItems];
     NSString *caller = [NSString valueForKey:@"caller" fromQueryItems:queryItems];
     UIAlertController * alert = [UIAlertController
-                                 alertControllerWithTitle:@"Send transaction"
-                                 message:nil
+                                 alertControllerWithTitle:@"Confirm transaction"
+                                 message:[amount stringByAppendingString:@" QTUM"]
                                  preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction* yesButton = [UIAlertAction
                                 actionWithTitle:@"OK"
                                 style:UIAlertActionStyleDefault
                                 handler:^(UIAlertAction * action) {
+                                    [self sendTransactionForDapp:amount address:address];
                                     NSURL *url = [[NSURL alloc] initWithString:[caller stringByAppendingString:@"://?success=true"]];
                                     [app openURL:url options:[[NSDictionary alloc] init] completionHandler:^(BOOL success) {}];
                                 }];
@@ -67,6 +68,12 @@
     
     
 	return YES;
+}
+
+- (void)sendTransactionForDapp:(NSString *)amount address: (NSString *) address {
+    NSArray *array = @[@{@"amount": [[QTUMBigNumber alloc] initWithString:amount], @"address": address}];
+    NSArray<BTCKey *> *addresses = [SLocator.walletManager.wallet allKeys];
+    [SLocator.transactionManager sendTransactionWalletKeys:addresses toAddressAndAmount:array fee:[[QTUMBigNumber alloc] initWithString:@"1"] andHandler:^(TransactionManagerErrorType errorType, id response, QTUMBigNumber *estimatedFee) {}];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *) application {

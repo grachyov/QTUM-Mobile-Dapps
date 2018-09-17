@@ -12,8 +12,8 @@
 		4E346FCA214EC6A60027502A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E346FC8214EC6A60027502A /* MainInterface.storyboard */; };
 		4E346FCE214EC6A60027502A /* QTUM Signer.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4E346FC4214EC6A60027502A /* QTUM Signer.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E346FF3214F0BAC0027502A /* Browser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E346FF2214F0BAC0027502A /* Browser.storyboard */; };
-		4E346FF6214F0C0E0027502A /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E346FF5214F0C0E0027502A /* BrowserViewController.m */; };
 		4E346FF9214F31C90027502A /* ExtensionIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E346FF8214F31C90027502A /* ExtensionIcon.xcassets */; };
+		4E932E6F214F671C00532D7B /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E932E6E214F671C00532D7B /* BrowserViewController.swift */; };
 		B3014D601F2A1B8D007EAE7A /* WatchContractViewControllerDark.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D5F1F2A1B8D007EAE7A /* WatchContractViewControllerDark.m */; };
 		B3014D631F2A1B9E007EAE7A /* WatchContractViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D621F2A1B9E007EAE7A /* WatchContractViewControllerLight.m */; };
 		B3014D661F2A1BBB007EAE7A /* WatchTokensViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D651F2A1BBB007EAE7A /* WatchTokensViewControllerLight.m */; };
@@ -678,9 +678,9 @@
 		4E346FC9214EC6A60027502A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		4E346FCB214EC6A60027502A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E346FF2214F0BAC0027502A /* Browser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Browser.storyboard; sourceTree = "<group>"; };
-		4E346FF4214F0C0E0027502A /* BrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowserViewController.h; sourceTree = "<group>"; };
-		4E346FF5214F0C0E0027502A /* BrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
 		4E346FF8214F31C90027502A /* ExtensionIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ExtensionIcon.xcassets; sourceTree = "<group>"; };
+		4E932E6D214F671B00532D7B /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		4E932E6E214F671C00532D7B /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		4EF76AC2214F429600FAF4EC /* QTUM Signer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "QTUM Signer.entitlements"; sourceTree = "<group>"; };
 		536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTUM Watch Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3014D5C1F29FD63007EAE7A /* WatchContractOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractOutput.h; sourceTree = "<group>"; };
@@ -4974,8 +4974,6 @@
 		E7FD363A1DC4D07E00748177 /* qtum wallet */ = {
 			isa = PBXGroup;
 			children = (
-				4E346FF4214F0C0E0027502A /* BrowserViewController.h */,
-				4E346FF5214F0C0E0027502A /* BrowserViewController.m */,
 				E7FD36601DC73B7900748177 /* Application */,
 				B31CF7271E126E05000BCF41 /* Auth and Login */,
 				E7DD00EF1DC9E5BD00FD5335 /* Categories */,
@@ -5008,6 +5006,8 @@
 				E7FD36611DC73D4600748177 /* PrefixHeader.pch */,
 				E7FD363C1DC4D07E00748177 /* main.m */,
 				B33EAF241E5DB039006125F3 /* qtum wallet.entitlements */,
+				4E932E6E214F671C00532D7B /* BrowserViewController.swift */,
+				4E932E6D214F671B00532D7B /* Bridging-Header.h */,
 			);
 			path = "qtum wallet";
 			sourceTree = "<group>";
@@ -5248,7 +5248,7 @@
 					E7FD36371DC4D07E00748177 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 8DXC3N7E7P;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -5719,7 +5719,6 @@
 				B3EA53031F45E200002FD201 /* QStoreListViewControllerLight.m in Sources */,
 				B3014D661F2A1BBB007EAE7A /* WatchTokensViewControllerLight.m in Sources */,
 				E73CF6D41EE2E1230044DF78 /* PopUpContentGenerator.m in Sources */,
-				4E346FF6214F0C0E0027502A /* BrowserViewController.m in Sources */,
 				B3827DD91ECF28EE00E500DE /* TokenCell.m in Sources */,
 				B369DF2F1F5D5F0E008B81CB /* AbiParameterTypeFixedArrayAddress.m in Sources */,
 				B35733271F97A69A00C64AAE /* ServiceLocator.m in Sources */,
@@ -5910,6 +5909,7 @@
 				B31E5FFC1F4EE7F6003B4FA5 /* QStoreTemplateDetailViewController.m in Sources */,
 				B365059E1F14B63600521603 /* EnableFingerprintViewControllerDark.m in Sources */,
 				B30B116B1FC6CE9B00E5ABBC /* SplashStoryboardFactory.m in Sources */,
+				4E932E6F214F671C00532D7B /* BrowserViewController.swift in Sources */,
 				E798462D1F0D1E50002A516A /* HistoryTableViewCellLight.m in Sources */,
 				E79846361F0D23CB002A516A /* WalletHeaderCellDark.m in Sources */,
 				B365058C1F14B12E00521603 /* WalletNameViewControllerLight.m in Sources */,
@@ -6629,6 +6629,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "qtum wallet/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -6749,6 +6750,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "qtum wallet/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
