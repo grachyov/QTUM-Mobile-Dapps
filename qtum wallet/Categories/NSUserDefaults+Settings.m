@@ -27,66 +27,66 @@ NSString *const kRemovingContractPassed = @"kRemovingContractPassed";
 
 
 
-NSString *const kGroupIdentifire = @"group.org.qtum.qtum-wallet";
+NSString *const kGroupIdentifire = @"group.qtum.hack";
 
 
 
 @implementation NSUserDefaults (Settings)
 
 + (void)saveIsMainnetSetting:(BOOL) value {
-	[[NSUserDefaults standardUserDefaults] setBool:value forKey:kSettingIsMainnet];
+	[[self groupDefaults] setBool:value forKey:kSettingIsMainnet];
 }
 
 + (void)saveIsRPCOnSetting:(BOOL) value {
-	[[NSUserDefaults standardUserDefaults] setBool:value forKey:kSettingIsRPCOn];
+	[[self groupDefaults] setBool:value forKey:kSettingIsRPCOn];
 }
 
 + (void)saveIsFingerpringAllowed:(BOOL) value {
-	[[NSUserDefaults standardUserDefaults] setBool:value forKey:kFingerpringAllowed];
+	[[self groupDefaults] setBool:value forKey:kFingerpringAllowed];
 }
 
 + (void)saveIsFingerpringEnabled:(BOOL) value {
-	[[NSUserDefaults standardUserDefaults] setBool:value forKey:kFingerpringEnabled];
+	[[self groupDefaults] setBool:value forKey:kFingerpringEnabled];
 }
 
 + (void)saveLanguage:(NSString *) lang {
-	[[NSUserDefaults standardUserDefaults] setObject:lang forKey:kLanguageSaveKey];
+	[[self groupDefaults] setObject:lang forKey:kLanguageSaveKey];
 }
 
 + (NSString *)getLanguage {
-	return [[NSUserDefaults standardUserDefaults] objectForKey:kLanguageSaveKey];
+	return [[self groupDefaults] objectForKey:kLanguageSaveKey];
 }
 
 + (BOOL)isRPCOnSetting {
-	return [[NSUserDefaults standardUserDefaults] boolForKey:kSettingIsRPCOn];
+	return [[self groupDefaults] boolForKey:kSettingIsRPCOn];
 }
 
 + (BOOL)isFingerprintAllowed {
-	return [[NSUserDefaults standardUserDefaults] boolForKey:kFingerpringAllowed];
+	return [[self groupDefaults] boolForKey:kFingerpringAllowed];
 }
 
 + (BOOL)isFingerprintEnabled {
-	return [[NSUserDefaults standardUserDefaults] boolForKey:kFingerpringEnabled];
+	return [[self groupDefaults] boolForKey:kFingerpringEnabled];
 }
 
 + (BOOL)isMainnetSetting {
-	return [[NSUserDefaults standardUserDefaults] boolForKey:kSettingIsMainnet];
+	return [[self groupDefaults] boolForKey:kSettingIsMainnet];
 }
 
 + (void)saveDeviceToken:(NSString *) lang {
-	[[NSUserDefaults standardUserDefaults] setObject:lang forKey:kDeviceTokenKey];
+	[[self groupDefaults] setObject:lang forKey:kDeviceTokenKey];
 }
 
 + (NSString *)getDeviceToken {
-	return [[NSUserDefaults standardUserDefaults] objectForKey:kDeviceTokenKey];
+	return [[self groupDefaults] objectForKey:kDeviceTokenKey];
 }
 
 + (void)savePrevDeviceToken:(NSString *) lang {
-	[[NSUserDefaults standardUserDefaults] setObject:lang forKey:kPrevDeviceTokenKey];
+	[[self groupDefaults] setObject:lang forKey:kPrevDeviceTokenKey];
 }
 
 + (NSString *)getPrevDeviceToken {
-	return [[NSUserDefaults standardUserDefaults] objectForKey:kPrevDeviceTokenKey];
+	return [[self groupDefaults] objectForKey:kPrevDeviceTokenKey];
 }
 
 + (void)saveWalletAddressKey:(NSString *) key {
@@ -111,36 +111,36 @@ NSString *const kGroupIdentifire = @"group.org.qtum.qtum-wallet";
 }
 
 + (void)saveIsDarkSchemeSetting:(BOOL) value {
-	[[NSUserDefaults standardUserDefaults] setBool:value forKey:kIsDarkScheme];
+	[[self groupDefaults] setBool:value forKey:kIsDarkScheme];
 }
 
 + (BOOL)isDarkSchemeSetting {
-	return [[NSUserDefaults standardUserDefaults] boolForKey:kIsDarkScheme];
+	return [[self groupDefaults] boolForKey:kIsDarkScheme];
 }
 
 + (void)saveIsNotFirstTimeLaunch:(BOOL) value {
 
-	[[NSUserDefaults standardUserDefaults] setBool:value forKey:kIsNotFirstTimeLaunch];
+	[[self groupDefaults] setBool:value forKey:kIsNotFirstTimeLaunch];
 }
 
 + (BOOL)isNotFirstTimeLaunch {
 
-	return [[NSUserDefaults standardUserDefaults] boolForKey:kIsNotFirstTimeLaunch];
+	return [[self groupDefaults] boolForKey:kIsNotFirstTimeLaunch];
 }
 
 + (void)saveCurrentVersion:(NSString *) value {
 
-	[[NSUserDefaults standardUserDefaults] setObject:value forKey:kCurrentVersion];
+	[[self groupDefaults] setObject:value forKey:kCurrentVersion];
 }
 
 + (void)saveFailedPinCount:(NSInteger) count {
 
-	[[NSUserDefaults standardUserDefaults] setObject:@(count) forKey:kFailedPinCount];
+	[[self groupDefaults] setObject:@(count) forKey:kFailedPinCount];
 }
 
 + (NSInteger)getCountOfPinFailed {
 
-	NSNumber *failedCount = [[NSUserDefaults standardUserDefaults] objectForKey:kFailedPinCount];
+	NSNumber *failedCount = [[self groupDefaults] objectForKey:kFailedPinCount];
 
 	if (failedCount) {
 		return failedCount.integerValue;
@@ -150,37 +150,37 @@ NSString *const kGroupIdentifire = @"group.org.qtum.qtum-wallet";
 }
 
 + (void)saveLastFailedPinDate:(NSDate *) date {
-	[[NSUserDefaults standardUserDefaults] setObject:date forKey:kLastFailedDate];
+	[[self groupDefaults] setObject:date forKey:kLastFailedDate];
 }
 
 + (NSDate *)getLastFailedPinDate {
-	return [[NSUserDefaults standardUserDefaults] objectForKey:kLastFailedDate];
+	return [[self groupDefaults] objectForKey:kLastFailedDate];
 }
 
 + (NSString *)currentVersion {
-	return [[NSUserDefaults standardUserDefaults] objectForKey:kCurrentVersion];
+	return [[self groupDefaults] objectForKey:kCurrentVersion];
 }
 
 + (void)saveIsRemovingContractTrainingPassed:(BOOL) value {
 
-	[[NSUserDefaults standardUserDefaults] setBool:value forKey:kRemovingContractPassed];
+	[[self groupDefaults] setBool:value forKey:kRemovingContractPassed];
 }
 
 + (BOOL)isRemovingContractTrainingPassed {
 
-	return [[NSUserDefaults standardUserDefaults] boolForKey:kRemovingContractPassed];
+	return [[self groupDefaults] boolForKey:kRemovingContractPassed];
 }
 
 // Public addresses
 
 + (void)savePublicAddresses:(NSArray *) addresses {
     
-	[[NSUserDefaults standardUserDefaults] setObject:addresses forKey:kPublicAddresses];
-	[[NSUserDefaults standardUserDefaults] synchronize];
+	[[self groupDefaults] setObject:addresses forKey:kPublicAddresses];
+	[[self groupDefaults] synchronize];
 }
 
 + (NSArray *)getPublicAddresses {
-	return [[NSUserDefaults standardUserDefaults] objectForKey:kPublicAddresses];
+	return [[self groupDefaults] objectForKey:kPublicAddresses];
 }
 
 @end

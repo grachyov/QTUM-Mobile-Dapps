@@ -20,7 +20,8 @@
 - (void)setControllerForNews:(UIViewController *) newsController
 					 forSend:(UIViewController *) sendController
 				   forWallet:(UIViewController *) walletController
-				  forProfile:(UIViewController *) profileController;
+                  forProfile:(UIViewController *) profileController
+                  forBrowser:(UIViewController *) browserController;
 
 
 @end

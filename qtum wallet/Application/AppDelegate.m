@@ -24,7 +24,7 @@
 	[ServiceLocator sharedInstance];
 	[SLocator.appSettings setup];
 	[Appearance setUp];
-
+    
 	[[ApplicationCoordinator sharedInstance] startSplashScreen];
 	dispatch_after (dispatch_time (DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue (), ^{
 
@@ -38,16 +38,40 @@
 }
 
 - (BOOL)application:(UIApplication *) app openURL:(NSURL *) url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *) options {
-
-	[SLocator.openURLManager launchFromUrl:url];
-	self.aplicationCoordinatorStarted = YES;
+    NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:url
+                                                resolvingAgainstBaseURL:NO];
+    NSArray *queryItems = urlComponents.queryItems;
+    NSString *address = [NSString valueForKey:@"address" fromQueryItems:queryItems];
+    NSString *amount = [NSString valueForKey:@"amount" fromQueryItems:queryItems];
+    NSString *caller = [NSString valueForKey:@"caller" fromQueryItems:queryItems];
+    UIAlertController * alert = [UIAlertController
+                                 alertControllerWithTitle:@"Send transaction"
+                                 message:nil
+                                 preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* yesButton = [UIAlertAction
+                                actionWithTitle:@"OK"
+                                style:UIAlertActionStyleDefault
+                                handler:^(UIAlertAction * action) {
+                                    NSURL *url = [[NSURL alloc] initWithString:[caller stringByAppendingString:@"://?success=true"]];
+                                    [app openURL:url options:[[NSDictionary alloc] init] completionHandler:^(BOOL success) {}];
+                                }];
+    
+    UIAlertAction* noButton = [UIAlertAction
+                               actionWithTitle:@"Cancel"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction * action) {}];
+    [alert addAction:yesButton];
+    [alert addAction:noButton];
+    
+    [_window.rootViewController presentViewController:alert animated:YES completion:nil];    
+    
+    
 	return YES;
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *) application {
 
 	[SLocator.popupService dismissLoader];
-	[[ApplicationCoordinator sharedInstance] startConfirmPinFlowWithHandler:nil];
 }
 
 #pragma mark - Notifications

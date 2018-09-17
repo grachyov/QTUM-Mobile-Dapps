@@ -11,52 +11,34 @@ import MobileCoreServices
 
 class ActionViewController: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
-
+    @IBOutlet weak var infoLabel: UILabel!
+    private var providedAddress: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        // Get the item[s] we're handling from the extension context.
-        
-        // For example, look for an image and place it into an image view.
-        // Replace this with something appropriate for the type[s] your extension supports.
-        var imageFound = false
-        for item in self.extensionContext!.inputItems as! [NSExtensionItem] {
-            for provider in item.attachments! as! [NSItemProvider] {
-                if provider.hasItemConformingToTypeIdentifier(kUTTypeImage as String) {
-                    // This is an image. We'll load it, then place it in our image view.
-                    weak var weakImageView = self.imageView
-                    provider.loadItem(forTypeIdentifier: kUTTypeImage as String, options: nil, completionHandler: { (imageURL, error) in
-                        OperationQueue.main.addOperation {
-                            if let strongImageView = weakImageView {
-                                if let imageURL = imageURL as? URL {
-                                    strongImageView.image = UIImage(data: try! Data(contentsOf: imageURL))
-                                }
-                            }
-                        }
-                    })
-                    
-                    imageFound = true
-                    break
-                }
-            }
-            
-            if (imageFound) {
-                // We only handle one image, so stop looking for more.
-                break
-            }
+        if let address = (UserDefaults(suiteName: "group.qtum.hack")?.object(forKey: "kPublicAddresses") as? [String])?.first {
+            providedAddress = address
+            infoLabel.text = address
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func allowButtonTapped(_ sender: Any) {
+        var items: [Any]?
+        if let providedAddress = providedAddress {
+            let item = NSExtensionItem()
+            let attachment = NSItemProvider(item: providedAddress + " " + "qtumwallet" as NSSecureCoding, typeIdentifier: "qtum.provider.response")
+            item.attachments = [attachment]
+            items = [item]
+        }                
+        self.extensionContext!.completeRequest(returningItems: items, completionHandler: nil)
     }
 
-    @IBAction func done() {
-        // Return any edited content to the host app.
-        // This template doesn't do anything, so we just echo the passed in items.
-        self.extensionContext!.completeRequest(returningItems: self.extensionContext!.inputItems, completionHandler: nil)
+    @IBAction func cancelButtonTapped() {
+        cancel()
     }
 
+    private func cancel() {
+        self.extensionContext!.completeRequest(returningItems: nil, completionHandler: nil)
+    }
+    
 }

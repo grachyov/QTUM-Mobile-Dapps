@@ -11,6 +11,9 @@
 		4E346FC7214EC6A60027502A /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E346FC6214EC6A60027502A /* ActionViewController.swift */; };
 		4E346FCA214EC6A60027502A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E346FC8214EC6A60027502A /* MainInterface.storyboard */; };
 		4E346FCE214EC6A60027502A /* QTUM Signer.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4E346FC4214EC6A60027502A /* QTUM Signer.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4E346FF3214F0BAC0027502A /* Browser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E346FF2214F0BAC0027502A /* Browser.storyboard */; };
+		4E346FF6214F0C0E0027502A /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E346FF5214F0C0E0027502A /* BrowserViewController.m */; };
+		4E346FF9214F31C90027502A /* ExtensionIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E346FF8214F31C90027502A /* ExtensionIcon.xcassets */; };
 		B3014D601F2A1B8D007EAE7A /* WatchContractViewControllerDark.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D5F1F2A1B8D007EAE7A /* WatchContractViewControllerDark.m */; };
 		B3014D631F2A1B9E007EAE7A /* WatchContractViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D621F2A1B9E007EAE7A /* WatchContractViewControllerLight.m */; };
 		B3014D661F2A1BBB007EAE7A /* WatchTokensViewControllerLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B3014D651F2A1BBB007EAE7A /* WatchTokensViewControllerLight.m */; };
@@ -674,6 +677,11 @@
 		4E346FC6214EC6A60027502A /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		4E346FC9214EC6A60027502A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		4E346FCB214EC6A60027502A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E346FF2214F0BAC0027502A /* Browser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Browser.storyboard; sourceTree = "<group>"; };
+		4E346FF4214F0C0E0027502A /* BrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowserViewController.h; sourceTree = "<group>"; };
+		4E346FF5214F0C0E0027502A /* BrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
+		4E346FF8214F31C90027502A /* ExtensionIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ExtensionIcon.xcassets; sourceTree = "<group>"; };
+		4EF76AC2214F429600FAF4EC /* QTUM Signer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "QTUM Signer.entitlements"; sourceTree = "<group>"; };
 		536D13E8DC1F063838D72A8F /* libPods-QTUM Watch Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTUM Watch Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3014D5C1F29FD63007EAE7A /* WatchContractOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractOutput.h; sourceTree = "<group>"; };
 		B3014D5D1F29FD7C007EAE7A /* WatchContractOutputDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchContractOutputDelegate.h; sourceTree = "<group>"; };
@@ -2120,9 +2128,11 @@
 		4E346FC5214EC6A60027502A /* QTUM Signer */ = {
 			isa = PBXGroup;
 			children = (
+				4EF76AC2214F429600FAF4EC /* QTUM Signer.entitlements */,
 				4E346FC6214EC6A60027502A /* ActionViewController.swift */,
 				4E346FC8214EC6A60027502A /* MainInterface.storyboard */,
 				4E346FCB214EC6A60027502A /* Info.plist */,
+				4E346FF8214F31C90027502A /* ExtensionIcon.xcassets */,
 			);
 			path = "QTUM Signer";
 			sourceTree = "<group>";
@@ -2585,6 +2595,7 @@
 				E70CFCFE1F1F63D300230C81 /* QStore.storyboard */,
 				B32EEC681EB3545700512FED /* Send.storyboard */,
 				E73D9C871ECB18A200A09CFE /* Splash.storyboard */,
+				4E346FF2214F0BAC0027502A /* Browser.storyboard */,
 				E7881B0C1F0BB63400BD6AB2 /* SplashLight.storyboard */,
 				B32EEC811EB3549F00512FED /* Start.storyboard */,
 				B32EEC8B1EB354C000512FED /* SubscribeToken.storyboard */,
@@ -4963,6 +4974,8 @@
 		E7FD363A1DC4D07E00748177 /* qtum wallet */ = {
 			isa = PBXGroup;
 			children = (
+				4E346FF4214F0C0E0027502A /* BrowserViewController.h */,
+				4E346FF5214F0C0E0027502A /* BrowserViewController.m */,
 				E7FD36601DC73B7900748177 /* Application */,
 				B31CF7271E126E05000BCF41 /* Auth and Login */,
 				E7DD00EF1DC9E5BD00FD5335 /* Categories */,
@@ -5226,6 +5239,11 @@
 						CreatedOnToolsVersion = 9.4.1;
 						DevelopmentTeam = 8DXC3N7E7P;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					E7FD36371DC4D07E00748177 = {
 						CreatedOnToolsVersion = 8.1;
@@ -5234,7 +5252,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.DataProtection = {
 								enabled = 0;
@@ -5274,6 +5292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E346FF9214F31C90027502A /* ExtensionIcon.xcassets in Resources */,
 				4E346FCA214EC6A60027502A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5311,6 +5330,7 @@
 				E70CFD341F1F647300230C81 /* SourceCodePopUp.storyboard in Resources */,
 				B31441091FB461E5004FE08C /* RemoveContractTrainingViewLight.xib in Resources */,
 				E7881B331F0BB7C700BD6AB2 /* proximanova-light.otf in Resources */,
+				4E346FF3214F0BAC0027502A /* Browser.storyboard in Resources */,
 				B3DB3E531F2F7F0D00AA408F /* CheckButtonLight.xib in Resources */,
 				B34228881F73CF2700C4C381 /* SliderViewLight.xib in Resources */,
 				E760F4A11F0F8E8F0056D042 /* proximanova-regitalic.otf in Resources */,
@@ -5699,6 +5719,7 @@
 				B3EA53031F45E200002FD201 /* QStoreListViewControllerLight.m in Sources */,
 				B3014D661F2A1BBB007EAE7A /* WatchTokensViewControllerLight.m in Sources */,
 				E73CF6D41EE2E1230044DF78 /* PopUpContentGenerator.m in Sources */,
+				4E346FF6214F0C0E0027502A /* BrowserViewController.m in Sources */,
 				B3827DD91ECF28EE00E500DE /* TokenCell.m in Sources */,
 				B369DF2F1F5D5F0E008B81CB /* AbiParameterTypeFixedArrayAddress.m in Sources */,
 				B35733271F97A69A00C64AAE /* ServiceLocator.m in Sources */,
@@ -6326,12 +6347,14 @@
 		4E346FCF214EC6A60027502A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = ExtensionIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "QTUM Signer/QTUM Signer.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -6353,12 +6376,14 @@
 		4E346FD0214EC6A60027502A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = ExtensionIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "QTUM Signer/QTUM Signer.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -6496,6 +6521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "qtum wallet/qtum wallet.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -6537,7 +6563,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/qtum wallet/Info.plist";
 				INFOPLIST_PREFIX_HEADER = "";
 				INFOPLIST_PREPROCESS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6616,6 +6642,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "qtum wallet/qtum wallet.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -6656,7 +6683,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/qtum wallet/Info.plist";
 				INFOPLIST_PREFIX_HEADER = "";
 				INFOPLIST_PREPROCESS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

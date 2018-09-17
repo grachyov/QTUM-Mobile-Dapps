@@ -30,20 +30,24 @@
 }
 
 - (void)configTabsWithNews:(UIViewController *) newsController
-					  send:(UIViewController *) sendController
-					wallet:(UIViewController *) walletController
-				   profile:(UIViewController *) profileController {
+                      send:(UIViewController *) sendController
+                    wallet:(UIViewController *) walletController
+                   profile:(UIViewController *) profileController
+                   browser:(UIViewController *) browserController {
 
-	[self setViewControllers:@[walletController, profileController, newsController, sendController] animated:YES];
+	[self setViewControllers:@[walletController, profileController, newsController, sendController, browserController] animated:YES];
 
 	profileController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Profile", "Tabs") image:[UIImage imageNamed:@"profile"] tag:0];
 	walletController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Wallet", "Tabs") image:[UIImage imageNamed:@"history"] tag:1];
 	newsController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"News", "Tabs") image:[UIImage imageNamed:@"news"] tag:2];
 	sendController.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Send", "Tabs") image:[UIImage imageNamed:@"send"] tag:3];
+    browserController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Browser" image:[UIImage imageNamed:@"ic-browser"] tag:4];
+    
 	[profileController.tabBarItem setTitlePositionAdjustment:UIOffsetMake (0, -3)];
 	[walletController.tabBarItem setTitlePositionAdjustment:UIOffsetMake (0, -3)];
 	[newsController.tabBarItem setTitlePositionAdjustment:UIOffsetMake (0, -3)];
 	[sendController.tabBarItem setTitlePositionAdjustment:UIOffsetMake (0, -3)];
+    [browserController.tabBarItem setTitlePositionAdjustment:UIOffsetMake (0, -3)];
 }
 
 #pragma mark TabbarOutput
@@ -51,9 +55,10 @@
 - (void)setControllerForNews:(UIViewController *) newsController
 					 forSend:(UIViewController *) sendController
 				   forWallet:(UIViewController *) walletController
-				  forProfile:(UIViewController *) profileController {
+                  forProfile:(UIViewController *) profileController
+                  forBrowser:(UIViewController *) browserController {
 
-	[self configTabsWithNews:newsController send:sendController wallet:walletController profile:profileController];
+	[self configTabsWithNews:newsController send:sendController wallet:walletController profile:profileController browser:browserController];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {

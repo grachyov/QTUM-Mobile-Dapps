@@ -92,6 +92,9 @@
 @interface ControllersFactory : NSObject
 
 //Controllers
+
+- (UIViewController *)browser;
+
 - (UIViewController *)profileFlowTab;
 
 - (UIViewController *)newsFlowTab;

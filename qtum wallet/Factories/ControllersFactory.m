@@ -83,6 +83,12 @@
 	return nav;
 }
 
+- (UIViewController *)browser {
+    UIViewController *browser = [UIViewController controllerInStoryboard:@"Browser" withIdentifire:@"BrowserViewController"];
+    
+    return [[UIViewController alloc] init];
+}
+
 - (UIViewController *)profileFlowTab {
 	NSObject <ProfileOutput> *controller = (NSObject <ProfileOutput> *)[UIViewController controllerInStoryboard:@"Profile" withIdentifire:@"ProfileViewController"];
 	ProfileNavigationCoordinator *nav = [[ProfileNavigationCoordinator alloc] initWithRootViewController:[controller toPresent]];

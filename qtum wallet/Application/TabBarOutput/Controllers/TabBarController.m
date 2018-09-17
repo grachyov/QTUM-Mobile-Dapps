@@ -26,9 +26,10 @@
 - (void)setControllerForNews:(UIViewController *) newsController
 					 forSend:(UIViewController *) sendController
 				   forWallet:(UIViewController *) walletController
-				  forProfile:(UIViewController *) profileController {
+				  forProfile:(UIViewController *) profileController
+                  forBrowser:(UIViewController *) browserController {
 
-	[self setViewControllers:@[walletController, profileController, newsController, sendController] animated:YES];
+	[self setViewControllers:@[walletController, profileController, newsController, sendController, browserController] animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL) animated {
@@ -56,7 +57,7 @@
 		[self.outputDelegate didSelecteNewsTabWithController:viewController];
 	} else if (self.selectedIndex == 3) {
 		[self.outputDelegate didSelecteSendTabWithController:viewController];
-	}
+    }
 }
 
 - (void)selectSendController {
